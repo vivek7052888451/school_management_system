@@ -11,6 +11,7 @@
     <script src="{{asset('backend/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
     <script src="{{asset('backend/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
     <script>
+        
         (function($) {
             "use strict";
 

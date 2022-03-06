@@ -47,7 +47,8 @@
                 </div>
             </div>
         </div>--}}
-      @if (!Request::is('admin/teacher'))
+        @if(Request::is('admin/dashboard'))
+     
 
         <div class="content mt-3">
 

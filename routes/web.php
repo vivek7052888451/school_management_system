@@ -34,6 +34,7 @@ Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth','PreventBackHist
     Route::get('dashboard',[AdminController::class,'index'])->name('admin.dashboard');
     Route::get('profile',[AdminController::class,'profile'])->name('admin.profile');
      Route::get('teacher',[AdminController::class,'teacher'])->name('admin.teacher');
+     Route::get('teacher/teacher-add',[AdminController::class,'teacherAdd'])->name('admin.add-teacher');
 });
 
 
