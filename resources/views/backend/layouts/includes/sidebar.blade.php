@@ -40,10 +40,10 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Users</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-book"></i><a href="forms-basic.html">Admin</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Student</a></li>
+                            <li><i class="fa fa-book"></i><a href="">Admin</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('admin.student')}}">Student</a></li>
                              <li><i class="fa fa-file-word-o"></i><a href="{{route('admin.teacher')}}">Teacher</a></li>
-                              <li><i class="fa fa-fire"></i><a href="ui-modals.html">Parent</a></li>
+                              <li><i class="fa fa-fire"></i><a href="{{route('admin.parent')}}">Parent</a></li>
                             
                         </ul>
                     </li>
@@ -53,7 +53,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Exam</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Exam List</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="{{route('admin.examlist')}}">Exam List</a></li>
                             <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Schedule</a></li>
                             <li><i class="fa fa-book"></i><a href="ui-switches.html">Mark</a></li>
                             <li><i class="fa fa-th"></i><a href="ui-grids.html">Exam Rule</a></li>

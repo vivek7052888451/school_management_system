@@ -27,9 +27,7 @@
                         <i class="mr-2 align-justify"></i>
                         <a href="{{route('admin.add-teacher')}}"><strong class="card-title" v-if="headerText"><i class="fa fa-plus"></i>Create</strong></a> 
                     </div>
-                  
-                  
-                        
+                   
                         <hr>
                      <div class="col-xl-3 col-lg-6">
                         <section class="card">
@@ -65,10 +63,6 @@
                             </div>
                         </section>
                      </div>
-
-                 
-
-
                 </div>
 
 

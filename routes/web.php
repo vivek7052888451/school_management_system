@@ -33,8 +33,20 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth','PreventBackHistory']],function(){
     Route::get('dashboard',[AdminController::class,'index'])->name('admin.dashboard');
     Route::get('profile',[AdminController::class,'profile'])->name('admin.profile');
+
+    //
      Route::get('teacher',[AdminController::class,'teacher'])->name('admin.teacher');
      Route::get('teacher/teacher-add',[AdminController::class,'teacherAdd'])->name('admin.add-teacher');
+
+    ///
+     Route::get('student',[AdminController::class,'student'])->name('admin.student');
+     Route::get('student/student-add',[AdminController::class,'studentAdd'])->name('admin.add-student');
+     //
+          Route::get('parent',[AdminController::class,'parent'])->name('admin.parent');
+     Route::get('parent/parent-add',[AdminController::class,'parentAdd'])->name('admin.add-parent');
+     //
+    Route::get('examlist',[AdminController::class,'examlist'])->name('admin.examlist');
+      Route::get('examlist/examlist-add',[AdminController::class,'examlistAdd'])->name('admin.examlist-add');
 });
 
 
